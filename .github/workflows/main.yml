@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 360  # 6 hour max (GitHub Free limit)
 
     steps:
-    - name: Download and extract Ngrok
+    - name: Download and extract Ngrok 
       run: |
         Invoke-WebRequest "https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-stable-windows-amd64.zip" -OutFile ngrok.zip
         Expand-Archive ngrok.zip -DestinationPath .
